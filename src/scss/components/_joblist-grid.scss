@@ -1,0 +1,14 @@
+.grid {
+  padding-top: 120px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  row-gap: 70px;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

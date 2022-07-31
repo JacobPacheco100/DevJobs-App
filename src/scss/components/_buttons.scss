@@ -1,0 +1,17 @@
+.btn-primary {
+  background: $primary;
+  color: white;
+  font-weight: bold;
+  padding: 18px 40px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-search {
+  background: $primary;
+  padding: 15px 0px;
+  border: none;
+  border-radius: 5px;
+}
+
+// global btn hover is in main.scss

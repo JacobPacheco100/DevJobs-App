@@ -1,0 +1,52 @@
+.grid-item {
+  height: 237px;
+  background: white;
+  border-radius: 7px;
+
+  position: relative;
+  padding: 35px;
+}
+
+.grid-item .logo-container {
+  top: -25px;
+  position: absolute;
+  background: #4e1952;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+
+  img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.grid-item .inner-item {
+  padding-top: 15px;
+}
+
+// ex: 5h ago . Full Time
+.grid-item .post-contract {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  span {
+    margin-inline: 10px;
+  }
+}
+
+// job title
+.grid-item a:hover h3 {
+  color: $dark-gray;
+}
+.grid-item .position {
+  margin-bottom: 15px;
+}
+
+.grid-item .company {
+  margin-bottom: 35px;
+}

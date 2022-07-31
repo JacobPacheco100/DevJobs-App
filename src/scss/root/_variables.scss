@@ -1,0 +1,11 @@
+// breakpoints
+$desktop: 1200px;
+$tablet: 770px;
+
+// mixins
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

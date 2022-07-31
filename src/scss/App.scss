@@ -1,0 +1,73 @@
+// root
+@import 'root/colors';
+@import 'root/fonts';
+@import 'root/variables';
+@import 'root/breakpoints';
+
+// components
+@import 'components/buttons';
+@import 'components/switch';
+@import 'components/searchbar';
+@import 'components/joblist-item';
+@import 'components/joblist-grid';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $bg-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+// header
+
+.container {
+  max-width: 1300px;
+  width: 90%;
+  margin-inline: auto;
+}
+
+header .header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 160px;
+  z-index: -1;
+}
+
+header .container {
+  @include flex-row;
+  height: 122px;
+}
+
+header .themes {
+  @include flex-row;
+}
+
+header label {
+  margin-inline: 15px;
+}
+
+.load-more {
+  margin-inline: auto;
+  display: block;
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+button:hover {
+  background: $primary-light;
+  cursor: pointer;
+}
+
+// footer // purpouse on => index.html | extra margin after : Load More
+footer {
+  margin-top: 100px;
+}
